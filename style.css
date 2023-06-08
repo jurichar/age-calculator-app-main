@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+  background-color: rgb(240, 240, 240);
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
+}
+.Page .sr-only {
+  display: none;
+}
+.Page .Component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  border-radius: 5% 5% 30% 5%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(138, 138, 138);
+  max-width: 800px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.Page .Component .Input {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+.Page .Component .Input .Day_section {
+  width: 20%;
+}
+.Page .Component .Input .Day_section .day {
+  padding: 10px;
+  width: 100%;
+  font-size: 32px;
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  outline: none;
+}
+.Page .Component .Input .Day_section .Error {
+  display: none;
+  color: red;
+}
+.Page .Component .Input .Month_section {
+  width: 20%;
+}
+.Page .Component .Input .Month_section .month {
+  padding: 10px;
+  width: 100%;
+  font-size: 32px;
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  outline: none;
+}
+.Page .Component .Input .Month_section .Error {
+  display: none;
+  color: red;
+}
+.Page .Component .Input .Year_section {
+  width: 20%;
+}
+.Page .Component .Input .Year_section .year {
+  padding: 10px;
+  width: 100%;
+  font-size: 32px;
+  border-radius: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  outline: none;
+}
+.Page .Component .Input .Year_section .Error {
+  display: none;
+  color: red;
+}
+@media (max-width: 620px) {
+  .Page .Component .Input .Year_section {
+    width: 100%;
+  }
+  .Page .Component .Input .Day_section {
+    width: 100%;
+  }
+  .Page .Component .Input .Month_section {
+    width: 100%;
+  }
+}
+.Page .Component .Separation {
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(200, 200, 200);
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0;
+}
+.Page .Component .Separation #summit {
+  width: 70px;
+  height: 70px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(132, 77, 255);
+  border-radius: 50%;
+}
+@media (max-width: 620px) {
+  .Page .Component .Separation {
+    justify-content: center;
+  }
+}
+.Page .Component .Result {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 800;
+  font-style: italic;
+  color: rgb(21, 21, 21);
+  min-width: 314px;
+}
+.Page .Component .Result .Years {
+  display: flex;
+  flex-direction: row;
+}
+.Page .Component .Result .Years .Number {
+  color: rgb(132, 77, 255);
+}
+.Page .Component .Result .Months {
+  display: flex;
+  flex-direction: row;
+}
+.Page .Component .Result .Months .Number {
+  color: rgb(132, 77, 255);
+}
+.Page .Component .Result .Days {
+  display: flex;
+  flex-direction: row;
+}
+.Page .Component .Result .Days .Number {
+  color: rgb(132, 77, 255);
+}
+@media (max-width: 620px) {
+  .Page .Component .Separation {
+    margin: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
